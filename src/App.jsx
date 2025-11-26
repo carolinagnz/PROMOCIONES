@@ -4,6 +4,7 @@ import { Alumno } from './componentes/Alumno'
 import { Avatar } from './componentes/Avatar'
 import { SelectorPromocion } from './componentes/SelectorPromocion'
 import { ListaAlumnos } from './componentes/ListaAlumnos'
+import { Usuario } from './componentes/usuario'
 
 function App() {
   const datosPromo = ["23/24", "24/25", "25/26", "24/25"];
@@ -55,6 +56,10 @@ function App() {
       <ListaAlumnos
         datosAlumno={alumnosFiltradosPromo}
       />
+
+      <div className="flex flex-col justify-center align-items-center bg-grey-200 h-screen">
+        <Usuario />
+      </div>
 
     </>
   )
